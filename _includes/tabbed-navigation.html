@@ -1,0 +1,8 @@
+<div class="tab-container">
+
+{% for page in site.pages %}
+  <a id="about-tab" class="tab tab-current" href="{{page.url}}">{{page.title}}</a>
+{% endfor %}
+
+</div>
+

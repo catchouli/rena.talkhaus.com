@@ -5,7 +5,7 @@
         <title>rena's cool websight</title>
 
         <!-- stylesheets -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
 
         <!-- metadata -->
         <meta charset="utf-8">
@@ -13,62 +13,16 @@
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-
-        <script>
-          function showTab(name) {
-            console.log('showing the ' + name + ' tab');
-
-            // Set all tabs and panels to not current
-            var allTabs = document.getElementsByClassName('tab');
-            var allPanels = document.getElementsByClassName('panel');
-
-            for (var i = 0; i < allTabs.length; ++i) {
-              allTabs[i].classList.remove('tab-current');
-            }
-
-            for (var i = 0; i < allPanels.length; ++i) {
-              allPanels[i].classList.remove('panel-current');
-            }
-
-            // Show the selected tab
-            var tabElem = document.getElementById(name + "-tab");
-            var panelElem = document.getElementById(name + "-panel");
-
-            if (tabElem)
-              tabElem.classList.add('tab-current');
-            if (panelElem)
-              panelElem.classList.add('panel-current');
-          }
-        </script>
     </head>
     <body>
-        <div id="header">
-          <h1><img src="assets/images/img0.gif"> rena's websight <img src="assets/images/img0.gif"></h1>
-        </div>
+        {% include header.html %}
 
-        <div class="tab-container">
-          <a id="about-tab" class="tab tab-current" onclick="showTab('about')" href="javascript:showTab('about')">home</a>
-          <a id="jackiechan-tab" class="tab" href="javascript:showTab('jackiechan')">jackie chan</a>
-        </div>
+        {% include tabbed-navigation.html %}
 
-        <div id="about-panel" class="panel panel-current panel-tabbed">
+        <div id="content" class="panel">
           {{ content }}
         </div>
 
-        <div id="jackiechan-panel" class="panel panel-tabbed">
-          <div class="header-container"><h2>jackie chan</h2></div>
-          <p>i'm a big fan of jackie chan</p>
-        </div>
-
-        <div id="affiliates" class="panel">
-          <div class="header-container"><h2>other cool sites</h2></div>
-          <p><a href="https://bombpersons.talkhaus.com/">bombpersons cool plant page</a></p>
-          <p>show me your cool sight and i might put it here!</p>
-        </div>
-
-        <div id="footer">
-          <p><a href="https://talkhaus.raocow.com/memberlist.php?mode=contactadmin">contact me!</a></p>
-          <img src="assets/images/butterfly.gif">
-        </div>
+        {% include footer.html %}
     </body>
 </html>
