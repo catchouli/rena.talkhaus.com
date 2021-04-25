@@ -1,8 +1,8 @@
 <div class="tab-container">
 
 {% for tab in site.pages %}
-  {% capture simplename %}{{ tab.title | escape | replace:' ','' }}{% endcapture %}
-  <a class="tab {% if page.title == tab.title %}tab-current{% endif %}" href="{{tab.url}}">{{tab.title}}</a>
+  {% capture simplename %}{{ tab.tabname | escape | replace:' ','' }}{% endcapture %}
+  <a class="tab {% if page.tabname == tab.tabname %}tab-current{% endif %}" href="{{tab.url}}">{{tab.tabname}}</a>
 {% endfor %}
 
 </div>
