@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <!-- title information -->
-        <title>{{ page.title }}</title>
+        <title>rena's cool websight - {{ page.title }}</title>
 
         <!-- stylesheets -->
         <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
         <!-- metadata -->
         <meta charset="utf-8">
@@ -20,6 +21,8 @@
         {% include tabbed-navigation.html %}
 
         <div id="content" class="panel">
+          {% include breadcrumbs.html %}
+          <h2>{{ page.title }}</h2>
           {{ content }}
         </div>
 

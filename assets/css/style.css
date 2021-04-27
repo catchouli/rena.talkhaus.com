@@ -4,6 +4,27 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
 a {
   color: #FB836F;
   font-family: helvetica;
@@ -57,12 +78,12 @@ a:visited {
   background: #7E549F;
 }
 
-.header-container {
+#header {
   text-align: center;
 }
 
-#header {
-  text-align: center;
+#breadcrumbs {
+  margin: 10px 0;
 }
 
 #affiliates {

@@ -1,8 +1,15 @@
 <div class="tab-container">
 
-{% for tab in site.pages %}
-  {% capture simplename %}{{ tab.tabname | escape | replace:' ','' }}{% endcapture %}
-  <a class="tab {% if page.tabname == tab.tabname %}tab-current{% endif %}" href="{{tab.url}}">{{tab.tabname}}</a>
+{% assign pages = site.pages | sort: 'tab_order' %}
+{% for tab in pages %}
+  {% if tab.on_main_navigation %}
+    {% if page.title == tab.title or page.tab_selected == tab.title %}
+      {% assign classes = "tab tab-current" %}
+    {% else %}
+      {% assign classes = "tab" %}
+    {% endif %}
+    <a class="{{classes}}" href="{{tab.url}}">{{tab.title}}</a>
+  {% endif %}
 {% endfor %}
 
 </div>

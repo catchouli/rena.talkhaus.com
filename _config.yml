@@ -1,3 +1,9 @@
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: default
+
 collections:
-  jackie_movies:
-    output: false
+  - jackie-movies
+  - chillies
