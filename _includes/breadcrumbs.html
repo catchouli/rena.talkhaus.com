@@ -3,7 +3,7 @@
 {% if crumbs.size > 2 %}
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
-      / {{ page.title }}
+      {{ page.title }}
     {% else %}
       {% assign url = "" %}
       {% assign crumb_limit = forloop.index | plus: 1 %}
@@ -11,7 +11,7 @@
         {% assign url = url | append: crumb | append: '/' %}
       {% endfor %}
       {% assign name = crumb | replace:'-',' ' | remove:'.html' %}
-      <a href="{{url}}">{{name}}</a>
+      <a href="{{url}}">{{name}}</a> /
     {% endif %}
   {% endfor %}
 {% endif %}

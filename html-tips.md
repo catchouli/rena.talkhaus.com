@@ -1,6 +1,6 @@
 ---
 title: html tips
-tab_order: 2
+tab_order: 40
 on_main_navigation: true
 permalink: /html-tips/
 ---

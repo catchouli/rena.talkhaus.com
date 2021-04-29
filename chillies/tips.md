@@ -1,7 +1,6 @@
 ---
 title: chilli tips
 tab_selected: chillies
-parent: chillies
 ---
 time for my tips on eating hot chillis!
 * wash your hands after eating super-hot chillies, or if you ever chop them

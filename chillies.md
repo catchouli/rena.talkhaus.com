@@ -1,6 +1,6 @@
 ---
 title: chillies
-tab_order: 2
+tab_order: 30
 on_main_navigation: true
 permalink: /chillies/
 ---

@@ -4,6 +4,11 @@ defaults:
     values:
       layout: default
 
+collections_dir: _collections
+
 collections:
   - jackie-movies
   - chillies
+  - hk-movies
+  - jp-movies
+  - western-movies
