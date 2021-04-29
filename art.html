@@ -1,0 +1,22 @@
+---
+title: art
+tab_order: 25
+on_main_navigation: true
+permalink: /art/
+---
+from time to time i have done an art
+
+<br><br>
+
+<div class="art-list">
+  {% assign sorted = site.static_files | reverse %}
+  {% for image in sorted %}
+    {% if image.path contains 'art/' %}
+      <span class="art-piece">
+        <a href="{{ site.baseurl }}{{ image.path }}">
+          <img src="{{ site.baseurl }}{{ image.path }}">
+        </a>
+      </span>
+    {% endif %}
+  {% endfor %}
+</div>

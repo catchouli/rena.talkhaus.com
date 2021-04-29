@@ -94,3 +94,23 @@ a:visited {
   text-align: center;
 }
 
+.art-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.art-piece {
+  width: 175px;
+  height: 130px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.art-piece img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
