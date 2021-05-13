@@ -3,6 +3,10 @@ defaults:
       type: pages
     values:
       layout: default
+  - scope:
+      category: hk-movies
+    values:
+      section: reviews/movies/hk-movies
 
 collections_dir: _collections
 

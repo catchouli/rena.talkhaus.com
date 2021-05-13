@@ -1,0 +1,12 @@
+{% assign sections = include.section | split: '/' %}
+{% assign accum = "/" %}
+{% for section in sections %}
+  {% assign accum = accum | append: {{section}} %}
+  {% if forloop.last %}
+    {% assign accum = accum | append: ".html" %}
+    <a href="{{accum}}">{{ section }}</a>
+  {% else %}
+    {% assign accum = accum | append: "/" %}
+    <a href="{{accum}}">{{ section }}</a>&nbsp;/
+  {% endif %}
+{% endfor %}
