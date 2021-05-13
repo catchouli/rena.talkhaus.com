@@ -1,1 +1,1 @@
-jekyll build -d ../../public_html
+jekyll build -d ../../public_html/rena.talkhaus.com
