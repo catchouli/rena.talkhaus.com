@@ -4,9 +4,25 @@ defaults:
     values:
       layout: default
   - scope:
-      category: hk-movies
+      type: hk-movies
     values:
       section: reviews/movies/hk-movies
+  - scope:
+      type: jp-movies
+    values:
+      section: reviews/movies/jp-movies
+  - scope:
+      type: jackie-movies
+    values:
+      section: jackie
+  - scope:
+      type: bad-movies
+    values:
+      section: reviews/movies/bad-movies
+  - scope:
+      type: game-reviews
+    values:
+      section: reviews/games
 
 collections_dir: _collections
 
