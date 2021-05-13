@@ -9,7 +9,7 @@ h3 {
 }
 </style>
 
-hello! see <a href="/about/">about me</a> for more information on me! or here's some recent posts...
+hello! i'm cat and i like watching dumb movies and writing reviews about them. see <a href="/about/">about me</a> for more information on me! or here's some recent posts...
 
 {% comment %}
   set all_posts to an empty array, then we fill all_posts with any post with date in it
