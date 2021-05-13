@@ -3,13 +3,27 @@ title: home
 tab_order: -1
 on_main_navigation: true
 ---
-<style>
-h3 {
-  margin-top: 0;
-}
-</style>
+hello everyone my name is cat and i like beans *holds up spork*
 
-hello! i'm cat and i like watching dumb movies and writing reviews about them. see <a href="/about/">about me</a> for more information on me! or here's some recent posts...
+i like:
+* watching dumb movies and writing reviews about them
+* making websites
+* purple
+* <a href="/chillies/">chillies (growing and eating)</a>
+* <a href="/jackie/">jackie chan</a>
+* fighting games
+* bass guitar
+* making games
+
+<div style="text-align: center; margin-bottom: 30px;">
+  <img src="/assets/images/roseblue.gif">
+  <img src="/assets/images/Chilli.gif">
+  <img src="/assets/images/baked_beans.gif" width="75">
+  <img src="/assets/images/keroppi.gif">
+  <img src="/assets/images/scotland.gif">
+</div>
+
+## Recent posts
 
 {% comment %}
   set all_posts to an empty array, then we fill all_posts with any post with date in it
