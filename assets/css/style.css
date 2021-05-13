@@ -19,7 +19,6 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -115,4 +114,8 @@ a:visited {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.hoverable:hover {
+  cursor: pointer;
 }
