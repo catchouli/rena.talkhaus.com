@@ -4,6 +4,9 @@ var gameStarted = false;
 // The current game score
 var currentScore = 0;
 
+// The flavor text element
+var flavorText = null;
+
 // The score text element
 var scoreText = null;
 
@@ -40,7 +43,7 @@ var mouseY = 0;
 
 // Constants
 var INITIAL_CHILLI_TIME_INTERVAL = 1000;
-var GRAVITY_CONSTANT = 0.00001;
+var GRAVITY_CONSTANT = 0.00002;
 
 // Start the chilli game
 function startChilliGame() {
@@ -205,15 +208,28 @@ function spawnChilli() {
 
 // Create or update the score text with the score
 function updateScoreText() {
+  if (flavorText == null) {
+    flavorText = document.createElement("p");
+    flavorText.appendChild(document.createTextNode("Help Keroppi catch the falling chillis!"));
+    flavorText.style.position = 'fixed';
+    flavorText.style.top = 0;
+    flavorText.style.fontSize = '30pt';
+    flavorText.style.marginLeft = '20px';
+    flavorText.style.marginTop = '20px';
+    flavorText.style.background = 'rgba(0, 0, 0, 0.4)';
+    flavorText.style.padding = '10px';
+    document.body.appendChild(flavorText);
+  }
+
   if (scoreText == null) {
     scoreText = document.createElement("p");
     scoreText.appendChild(document.createTextNode("blah"));
     scoreText.style.position = 'fixed';
-    scoreText.style.top = 0;
-    scoreText.style.fontSize = '30pt';
+    scoreText.style.top = '80px';
+    scoreText.style.fontSize = '25pt';
     scoreText.style.marginLeft = '20px';
     scoreText.style.marginTop = '20px';
-    scoreText.style.background = 'rgba(0, 0, 0, 0.2)';
+    scoreText.style.background = 'rgba(0, 0, 0, 0.4)';
     scoreText.style.padding = '10px';
     document.body.appendChild(scoreText);
   }
@@ -231,7 +247,7 @@ function createGameOverText() {
     gameOverText.style.fontSize = '40pt';
     gameOverText.style.marginLeft = '20px';
     gameOverText.style.marginTop = '20px';
-    gameOverText.style.background = 'rgba(0, 0, 0, 0.2)';
+    gameOverText.style.background = 'rgba(0, 0, 0, 0.4)';
     gameOverText.style.padding = '10px';
     document.body.appendChild(gameOverText);
   }
