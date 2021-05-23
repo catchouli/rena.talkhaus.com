@@ -20,6 +20,10 @@ defaults:
     values:
       section: reviews/movies/bad-movies
   - scope:
+      type: other-movies
+    values:
+      section: reviews/movies/other-movies
+  - scope:
       type: game-reviews
     values:
       section: reviews/games
@@ -33,4 +37,5 @@ collections:
   - jp-movies
   - bad-movies
   - western-movies
+  - other-movies
   - game-reviews
